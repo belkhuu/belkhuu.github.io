@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "The University of Texas at Dallas | Dallas, TX M.S in Economics | August 2021 - December 2022\nThe University of Texas at Dallas | Dallas, TX B.S in Economics | August 2019 - August 2021"
+    "text": "The University of Texas at Dallas | Dallas, TX M.S in Economics | August 2021 - December 2022\nThe University of Texas at Dallas | Dallas, TX B.S in Economics | August 2019 - August 2021\nDallas College, Richland Campus | Dallas, TX A.S in Business | May 2015 - December 2018"
   },
   {
     "objectID": "about.html#experience",
@@ -18,7 +18,7 @@
     "href": "assignments.html",
     "title": "Assignments for EPPS 6356",
     "section": "",
-    "text": "Code\n\n\nR\n\n\nArt\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+    "text": "Code\n\n\nR\n\n\nArt\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEverything I learned while creating this page\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -32,7 +32,7 @@
     "href": "posts/EPPS6356 - 1/index.html",
     "title": "Assignment 1: Generative Art",
     "section": "",
-    "text": "The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.\nThe page introduces us a various artists who create generative art and algorithm art.\nFigure 1 is a piece by Mark J. Stock, who tread the line between what’s natural and what’s computerized.\n\n\n\nFigure 1: Sprawl by Mark J. Stock\n\n\n\n\n\nKarenXCheng is an video creator uses AI generated art tools like Dall-E.\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://www.youtube.com/watch?v=QM6_YNNwZjk\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 2: Karen X Cheng uses Dall-E, an AI tool, to generate images.\n\n\n\n\n\n\nNow, we can understand how powerful generative art can be, especially when paired with artificial intelligence. There is no surprise that this new way of creating will leave “traditional” artists somewhat uneasy. In this New York Times article, published a few days ago, an A.I. generated piece Figure 3 by artist Jason Allen won this year’s the Colorado State Fair’s annual art competition.\n\n\n\nFigure 3: Théâtre D’opéra Spatial by Jason Allen"
+    "text": "The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.\nThe page introduces us a various artists who create generative art and algorithm art.\nFigure 1 is a piece by Mark J. Stock, who tread the line between what’s natural and what’s computerized.\n\n\n\nFigure 1: Sprawl by Mark J. Stock\n\n\nAI generated art is a specific type of generative art to uses machine learning tools to examine existing work. The following two sources will discuss those a little more.\n\n\n\nKarenXCheng is an video creator uses AI generated art tools, like Dall-E 2 to create different images for her projects. We can see that in Figure 2, the tool needs specific prompts to generate different images. The artists, like Cheng, will have to comb though them to select the ones she likes best!\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/eUSx4_S6O34\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 2: KarenXCheng uses Dall-E 2, an AI tool, to generate images.\n\n\n\nIn Figure 3, Cheng also uses multiple AI tools like Dall-E 2 to generate images, and EbSynth to optimize her project.\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/6-L4vHmt1Dc\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 3: KarenXCheng uses Dall-E 2 and EbSynth to create her project.\n\n\n\n\n\n\nNow, we can understand how powerful generative art can be, especially when paired with artificial intelligence. There is no surprise that this new way of creating will leave “traditional” artists somewhat uneasy. In this New York Times article, published a few days ago, an A.I. generated piece Figure 4 by artist Jason Allen won this year’s the Colorado State Fair’s annual art competition.\n\n\n\nFigure 4: Théâtre D’opéra Spatial by Jason Allen"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -46,7 +46,7 @@
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Assignment Page",
     "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This post serves as summary for all the things I have learned while working on my assignments."
   },
   {
     "objectID": "project.html",
@@ -67,13 +67,13 @@
     "href": "posts/EPPS6356 - 1/index.html#fall-color",
     "title": "Assignment 1: Generative Art",
     "section": "2. Fall Color",
-    "text": "2. Fall Color\nFigure 4 is a modified version of “Fall Color,” using the color “lightgreen” instead of “burlywood3.”\nCredit: https://fronkonstin.com\n\n\nCode\n# Install packages\n\n# install.packages(\"gsubfn\")\n# install.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n  \n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"lightgreen\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\n\n\n\n\n\nFigure 4: Light Green Color"
+    "text": "2. Fall Color\nFigure 5 is a modified version of “Fall Color,” using the color “lightgreen” instead of “burlywood3.”\nCredit: https://fronkonstin.com\n\n\nCode\n# Install packages\n\n# install.packages(\"gsubfn\")\n# install.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n  \n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"lightgreen\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\n\n\n\n\n\nFigure 5: Light Green Color"
   },
   {
     "objectID": "posts/EPPS6356 - 1/index.html#critique-on-a-chart-from-published-work",
     "href": "posts/EPPS6356 - 1/index.html#critique-on-a-chart-from-published-work",
     "title": "Assignment 1: Generative Art",
     "section": "3. Critique on a chart from published work",
-    "text": "3. Critique on a chart from published work\n\n\n\nFigure 5: Summary of Treatment Effects"
+    "text": "3. Critique on a chart from published work\nThe Economic Consequences of Increasing Sleep Among the Urban Poor is an article that discussed an experimental research about sleep and its impact. Figure 6 sums up the findings of the study.\n\n\n\nFigure 6: Summary of Treatment Effects"
   }
 ]
