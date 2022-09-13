@@ -18,7 +18,7 @@
     "href": "assignments.html",
     "title": "Assignments for EPPS 6356",
     "section": "",
-    "text": "Code\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+    "text": "What I learned while working on this assignment\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\nDraft\n\n\n\n\n\n\n\n\n\n\n\nSep 13, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -26,6 +26,34 @@
     "title": "Bel Khuu",
     "section": "",
     "text": "Here, you can learn more about me and my projects."
+  },
+  {
+    "objectID": "posts/blogpost - 1/index.html",
+    "href": "posts/blogpost - 1/index.html",
+    "title": "Blog Post: Assignment 1 DRAFT",
+    "section": "",
+    "text": "This guide on quarto.org is great tool to start this website. However, it took me some time to get familiarized with it. I started by running the codes for a lot of the examples. I was also doing Google searches of what I wanted to do with my website before realizing that most of the information I needed was in this guide!\n\n\nThe little button that on the top right corner of the code blocks serves as a great tool to copy and paste the code blocks. I didn’t understand why turning off echo or applying code folding didn’t work properly. I spent a good hour trying to find different ways to do the same thing. The problem was that I was highlighting the codes and copying them instead of using this button!\nTo see an example, expand the note below.\n\n\n\n\n\n\nNote\n\n\n\n\n\nTo show the copy button for your own website, add this in your title block:\nformat:\n  html:\n    code-copy: true\nValid values for code-copy include:\n\n\n\nhover\nShow button on hover (default)\n\n\ntrue\nAlways show code copy button\n\n\nfalse\nNever show code copy button\n\n\n\nMy title block for this post looks like this!\n---\ntitle: \"Blog Post: Assignment 1\"\nsubtitle: \"What I learned while working on this assignment\"\nauthor: \"Bel Khuu\"\ndate: \"2022-09-12\"\ncategories: [Code, R, Art, Assignment]\nimage: \"image.jpg\"\ndraft: true\nformat:\n  html:\n    code-fold: true\n    code-tools: true\n    code-copy: true\n---\n\n\n\n\n\n\nWhen I decided that I wanted a blog setup for this assignment tab, there wasn’t anything in the guide that talked about this. You either build a website or you build a blog.\nI figured that I should just create a temporary blog to see how it was different compared to a Quarto website. I found the files I needed and just copied them back my original project.\nThis is definitely an unusual way to do this. You can find the more straight forward way to do this under Listing Pages, under Documents Listings in the Quarto guide. Like I said, I explored around a lot before understanding that all I needed can be found in the guide. The note below is exactly what I did.\n\n\n\n\n\n\nNote\n\n\n\n\n\n\nAdd a new folder on GitHub by creating a new file. It will become a new directory for a Quarto project.\n\nbelkhuu.github.io will be referred to as website project\nbelkhuu.github.io/assignments/ will be referred to as blog project\n\nStart a new project in R with the new directory and choose Quarto Blog.\nInspect the initial project folder, yaml and index files from the blog project folder\nMerge the two project:\n\nRename the index.qmd to assignments.qmd\nCopy the posts folder\nPaste both to my website project folder\nMake sure I added the Assignments tab is created in the website’s yaml file."
+  },
+  {
+    "objectID": "posts/blogpost - 1/index.html#understanding-how-to-upload-quarto-files-to-github",
+    "href": "posts/blogpost - 1/index.html#understanding-how-to-upload-quarto-files-to-github",
+    "title": "Blog Post: Assignment 1 DRAFT",
+    "section": "Understanding how to upload Quarto files to GitHub",
+    "text": "Understanding how to upload Quarto files to GitHub\nBefore publishing the changes to my website, I had to keep reminding myself of the following:\n\nManually set the directory to belkhuu.github.io, just in case I was working on something else.\nRender the website on RStudio before uploading file from the _site folder to GitHub\nOnly pull what’s inside the _site folder to GitHub and not the folder itself"
+  },
+  {
+    "objectID": "posts/blogpost - 1/index.html#create-a-more-customized-and-sleek-look-for-my-website",
+    "href": "posts/blogpost - 1/index.html#create-a-more-customized-and-sleek-look-for-my-website",
+    "title": "Blog Post: Assignment 1 DRAFT",
+    "section": "Create a more customized and sleek look for my website",
+    "text": "Create a more customized and sleek look for my website\nI honestly spent most of the time working on the assignment on this part.\n\nHiding things\n\nHide huge code blocks with code folding\n\n\nHide small or sections of code blocks by turning off echo\n\n\nHide warning messages\nEvery time I run the codes with the tidyverse library, it keeps giving me this block of warning, which is what you would see in the console. So after hiding all the code blocks, I couldn’t hide this part of the output. It was upsetting.\nMention Callout boxes\n\n\n\nInsert media\n\nImages\nThis is just like using R markdown. I love pulling the images using a URL. That way I don’t have to download it!\nInsert image from a local folder:\n\n![](image.jpg)\n![](image.png)\nInsert image using a URL:\n![](https://cpb-us-e2.wpmucdn.com/sandbox.utdallas.edu/dist/3/949/files/FL17-Logos.jpg)\n\n\n\n\n\n\nDanger\n\n\n\n\n\nWhen using a URL:\n\nRight click and select “Open image in new tab”\nThen, right click and select “Copy image address”\n\n\n\n\n\n\nVideos\n\n\n\nLive references\n\nIn R blocks\n\n\nIn text blocks\n\n\n\nMore website tools I learned about while creating this blog post.\n\nAdd Copy Button\n\n\nA Callout Box"
+  },
+  {
+    "objectID": "posts/blogpost - 1/index.html#final-notes",
+    "href": "posts/blogpost - 1/index.html#final-notes",
+    "title": "Blog Post: Assignment 1 DRAFT",
+    "section": "Final notes",
+    "text": "Final notes\nI learned all of the things above before I realized that the Prepare for Class 3 has a great reference for what I needed, How to Build a Quarto blog guide by Isabella Velásquez. That being said, it was not as interactive as the Quarto guide!"
   },
   {
     "objectID": "posts/EPPS6356 - 1/index.html",
