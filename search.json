@@ -123,7 +123,7 @@
     "href": "posts/Assignment - 2/index.html",
     "title": "Assignment 2: Creating Plots",
     "section": "",
-    "text": "Original: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\nChanging the pch changes the point style on the plot.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
+    "text": "Let’s start by exploring the murrell01.R script and learn how to create plots without using ggplot.\n\n\n\n\n\n\nOriginal: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\nChanging the pch changes the point style on the plot.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
   },
   {
     "objectID": "posts/Assignment - 2/index.html#explore-happy-planet-index",
