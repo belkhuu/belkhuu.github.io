@@ -131,5 +131,12 @@
     "title": "Assignment 2: Creating Plots",
     "section": "2. Explore Happy Planet Index",
     "text": "2. Explore Happy Planet Index\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\nPie Chart\n\n\n\n\n\n\nPlots from Happy Planet Index"
+  },
+  {
+    "objectID": "posts/Assignment - 2/index.html#the-future-of-data-analysis---edward-tufte",
+    "href": "posts/Assignment - 2/index.html#the-future-of-data-analysis---edward-tufte",
+    "title": "Assignment 2: Creating Plots",
+    "section": "3. The future of Data Analysis - Edward Tufte",
+    "text": "3. The future of Data Analysis - Edward Tufte\nWe are exposed to a an incredibly large amount of information by finding our way using applications like Google maps. I didn’t notice that there were 900+ words on the map! Our eyes can see a lot content and colors. Small changes like ghosting a player can make storytelling more efficient.\nGain a taste for excellent and thrive for it. Ask ourselves how things are done.\nHave an open mind but not an empty head: be ready to learn new things without giving up past knowledge.\nJohn W. Tukey: We assume that models can’t be useful because they oversimplify. However, ofter, they are. Do we even know what is useful anymore?\nMost public studies are false? We are trying to tell the truth. So why? Have we been overfitting our models? are the new tools to gather new data that is not accounted for? “If you torture the data long enough, it will tell you anything you want” is a powerful quote. It highlights the overfitting problem. Replication prices is more expensive. Then, how can we understand what has been done in the past and adjust it to future data?\nElectronic records did not improve mortality rate. What we really need is to use the new method to make necessary change, “to learn the truth” according to Tufte.\nConfirmatory Unhacked VS Exploratory Detective Work Tufte considered this, the future of data analysis with the example of FDA. It required better research designs because the data will have to be specified in advance.\nThe importance of Data Forensics = Give your data a health check. - People can’t keep their own score\nThe Thinking eye - Ask “How do you know?” - Are there any bias? - Look at the world and not it’s representation - What we see may not contain the answer"
   }
 ]
