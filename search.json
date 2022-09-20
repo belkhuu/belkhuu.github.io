@@ -18,7 +18,7 @@
     "href": "assignments.html",
     "title": "Assignments for EPPS 6356",
     "section": "",
-    "text": "What I learned while working on this assignment\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+    "text": "Code\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nWhat I learned while working on this assignment\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -117,5 +117,19 @@
     "title": "Blog Post: Assignment 1",
     "section": "IV. Final notes",
     "text": "IV. Final notes\nI learned all of the things above before I realized that the Prepare for Class 3 has a great reference for what I needed, How to Build a Quarto blog guide by Isabella Velásquez. That being said, it was not as interactive as the Quarto guide!\nI’m not too happy with this first post yet. One thing I want to change is to fix the text wrap so that when the code chunks are too long, you won’t have to use the cursor.\n\nWorking on Cloud storage\nIf you are like me and love to work on cloud storage, you will find this tip helpful. Please note that this might only with cloud storage apps that have a desktop drop folder. For this project, I used the University’s OneDrive folder.\n\n\n\n\n\n\nTip\n\n\n\n\n\nCreate your R project on a desktop location first, then move it to the cloud folder!"
+  },
+  {
+    "objectID": "posts/Assignment - 2/index.html",
+    "href": "posts/Assignment - 2/index.html",
+    "title": "Assignment 2: Creating Plots",
+    "section": "",
+    "text": "Original: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\nChanging the pch changes the point style on the plot.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
+  },
+  {
+    "objectID": "posts/Assignment - 2/index.html#explore-happy-planet-index",
+    "href": "posts/Assignment - 2/index.html#explore-happy-planet-index",
+    "title": "Assignment 2: Creating Plots",
+    "section": "2. Explore Happy Planet Index",
+    "text": "2. Explore Happy Planet Index\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\nPlots from Happy Planet Index"
   }
 ]
