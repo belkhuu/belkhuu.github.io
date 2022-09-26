@@ -18,7 +18,7 @@
     "href": "assignments.html",
     "title": "Assignments for EPPS 6356",
     "section": "",
-    "text": "Code\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nWhat I learned while working on this assignment\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+    "text": "Code\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 25, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nWhat I learned while working on this assignment\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -138,5 +138,47 @@
     "title": "Assignment 2: Creating Plots",
     "section": "3. The future of Data Analysis - Edward Tufte",
     "text": "3. The future of Data Analysis - Edward Tufte\nWe are exposed to a an incredibly large amount of information by finding our way using applications like Google maps. I didn’t notice that there were 900+ words on the map! Our eyes can see a lot content and colors. Small changes like ghosting a player can make storytelling more efficient.\nGain a taste for excellent and thrive for it. Ask ourselves how things are done.\nHave an open mind but not an empty head: be ready to learn new things without giving up past knowledge.\nJohn W. Tukey: We assume that models can’t be useful because they oversimplify. However, ofter, they are. Do we even know what is useful anymore?\nMost public studies are false? We are trying to tell the truth. So why? Have we been overfitting our models? are the new tools to gather new data that is not accounted for? “If you torture the data long enough, it will tell you anything you want” is a powerful quote. It highlights the overfitting problem. Replication prices is more expensive. Then, how can we understand what has been done in the past and adjust it to future data?\nElectronic records did not improve mortality rate. What we really need is to use the new method to make necessary change, “to learn the truth” according to Tufte.\nConfirmatory Unhacked VS Exploratory Detective Work Tufte considered this, the future of data analysis with the example of FDA. It required better research designs because the data will have to be specified in advance.\nThe importance of Data Forensics = Give your data a health check. - People can’t keep their own score\nThe Thinking eye - Ask “How do you know?” - Are there any bias? - Look at the world and not it’s representation - What we see may not contain the answer"
+  },
+  {
+    "objectID": "posts/blogpost - 2/index.html",
+    "href": "posts/blogpost - 2/index.html",
+    "title": "Assignment 2: Creating Plots",
+    "section": "",
+    "text": "For this week’s assignment, I didn’t learn much more in for Quarto. What I thought made my website a lot nicer was organizing my plots in 2 columns and giving them sub-captions."
+  },
+  {
+    "objectID": "posts/blogpost - 2/index.html#how-to-get-sub-caption",
+    "href": "posts/blogpost - 2/index.html#how-to-get-sub-caption",
+    "title": "Assignment 2: Creating Plots",
+    "section": "1. How to get sub caption",
+    "text": "1. How to get sub caption\nHere is the beginning of the second code chunk from exploring the murrell01.R script.\n#| code-fold: true\n#| fig-cap: \"More Plots\" \n#| fig-subcap:\n#|   - \"Scatterplot\"\n#|   - \"Histogram\"\n#|   - \"Barplot\"\n#|   - \"Boxplot\"\n#|   - \"Persp\"\n#|   - \"Piechart\"\n#| layout-ncol: 2\n#| layout-nrow: 3\nBelow, you can see what it the assignment looks like on you have applied these Execution Options. You can click on the hyperlink to learn them.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
+  },
+  {
+    "objectID": "posts/Assignment - 3/index.html",
+    "href": "posts/Assignment - 3/index.html",
+    "title": "Assignment 3: Anscombe Regression Models and Plots",
+    "section": "",
+    "text": "In this example, the linear regression line is the same for all the models and yet, their scatter plot tells us that there is a better option to fit the data.\n\n\n\n\n\nSimple Model\n\n\n\n\n       x1             x2             x3             x4           y1        \n Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  \n 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  \n Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  \n Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  \n 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  \n Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  \n       y2              y3              y4        \n Min.   :3.100   Min.   : 5.39   Min.   : 5.250  \n 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  \n Median :8.140   Median : 7.11   Median : 7.040  \n Mean   :7.501   Mean   : 7.50   Mean   : 7.501  \n 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  \n Max.   :9.260   Max.   :12.74   Max.   :12.500  \n\n\nFor y1 ~ x1, the linear regression line seems to be a good fit for the model.\nFor y2 ~ x2, a quadratic regression line seems to be a better fit.\nFor y3 ~ x3 and y4 ~ x4, we might consider discarding the last data point as an outlier.\n\n\n\n\n\n\ny1 ~ x1\n\n\n\n\n\n\n\ny2 ~ x2\n\n\n\n\n\n\n\n\n\ny3 ~ x3\n\n\n\n\n\n\n\ny4 ~ x4\n\n\n\n\n\n\nFour Model Objects\n\n\n\n\n\nAnalysis of Variance Table\n\nResponse: y1\n          Df Sum Sq Mean Sq F value  Pr(>F)   \nx1         1 27.510 27.5100   17.99 0.00217 **\nResiduals  9 13.763  1.5292                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y2\n          Df Sum Sq Mean Sq F value   Pr(>F)   \nx2         1 27.500 27.5000  17.966 0.002179 **\nResiduals  9 13.776  1.5307                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y3\n          Df Sum Sq Mean Sq F value   Pr(>F)   \nx3         1 27.470 27.4700  17.972 0.002176 **\nResiduals  9 13.756  1.5285                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y4\n          Df Sum Sq Mean Sq F value   Pr(>F)   \nx4         1 27.490 27.4900  18.003 0.002165 **\nResiduals  9 13.742  1.5269                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n                  lm1      lm2       lm3       lm4\n(Intercept) 3.0000909 3.000909 3.0024545 3.0017273\nx1          0.5000909 0.500000 0.4997273 0.4999091\n\n\n$lm1\n             Estimate Std. Error  t value    Pr(>|t|)\n(Intercept) 3.0000909  1.1247468 2.667348 0.025734051\nx1          0.5000909  0.1179055 4.241455 0.002169629\n\n$lm2\n            Estimate Std. Error  t value    Pr(>|t|)\n(Intercept) 3.000909  1.1253024 2.666758 0.025758941\nx2          0.500000  0.1179637 4.238590 0.002178816\n\n$lm3\n             Estimate Std. Error  t value    Pr(>|t|)\n(Intercept) 3.0024545  1.1244812 2.670080 0.025619109\nx3          0.4997273  0.1178777 4.239372 0.002176305\n\n$lm4\n             Estimate Std. Error  t value    Pr(>|t|)\n(Intercept) 3.0017273  1.1239211 2.670763 0.025590425\nx4          0.4999091  0.1178189 4.243028 0.002164602"
+  },
+  {
+    "objectID": "posts/blogpost - 2/index.html#how-to-get-sub-captions",
+    "href": "posts/blogpost - 2/index.html#how-to-get-sub-captions",
+    "title": "Assignment 2: Creating Plots",
+    "section": "How to get sub-captions",
+    "text": "How to get sub-captions\nHere is the beginning of the second code chunk from exploring the murrell01.R script.\n#| code-fold: true\n#| fig-cap: \"More Plots\" \n#| fig-subcap:\n#|   - \"Scatterplot\"\n#|   - \"Histogram\"\n#|   - \"Barplot\"\n#|   - \"Boxplot\"\n#|   - \"Persp\"\n#|   - \"Piechart\"\n#| layout-ncol: 2\n#| layout-nrow: 3\nBelow, you can see what it the assignment looks like on you have applied these Execution Options. You can click on the hyperlink to learn them.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
+  },
+  {
+    "objectID": "posts/Assignment - 3/index.html#fine-tune-the-charts-with-rgraphics-by-murrell",
+    "href": "posts/Assignment - 3/index.html#fine-tune-the-charts-with-rgraphics-by-murrell",
+    "title": "Assignment 3: Anscombe Regression Models and Plots",
+    "section": "2. Fine tune the charts with RGraphics by Murrell",
+    "text": "2. Fine tune the charts with RGraphics by Murrell\n\n\n\n\n\nx1 ~ y1 Chart fine-tuned with RGraphics by Murrell"
+  },
+  {
+    "objectID": "posts/Assignment - 3/index.html#fine-tune-the-charts-with-ggplot",
+    "href": "posts/Assignment - 3/index.html#fine-tune-the-charts-with-ggplot",
+    "title": "Assignment 3: Anscombe Regression Models and Plots",
+    "section": "3. Fine tune the charts with ggplot",
+    "text": "3. Fine tune the charts with ggplot\n\n\n\n\n\nx1 ~ y1 Chart fine-tuned with ggplot2"
   }
 ]
