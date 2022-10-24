@@ -2,13 +2,21 @@
   {
     "listing": "/assignments.html",
     "items": [
-      "/posts/Assignment - 4/index.html",
+      "/posts/blogpost - 3/index.html",
+      "/posts/Assignment - 5 (Hackathon 2)/index.html",
+      "/posts/Assignment - 4 (Hackathon 1)/index.html",
       "/posts/Assignment - 3/index.html",
+      "/posts/blogpost - 2/index.html",
       "/posts/Assignment - 2/index.html",
       "/posts/blogpost - 1/index.html",
-      "/posts/blogpost - 2/index.html",
       "/posts/Assignment - 1/index.html",
       "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/project.html",
+    "items": [
+      "/projects/welcome/index.html"
     ]
   }
 ]

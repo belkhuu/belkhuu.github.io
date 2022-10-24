@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -55,7 +60,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -68,7 +73,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -95,10 +100,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,9 +135,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">belkhuu.github.io</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -148,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="../../research.html">Research</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../project.html">Project</a>
+    <a class="nav-link" href="../../project.html">Projects</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../assignments.html">Assignments</a>
@@ -200,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -231,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="fig-sprawl" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="https://images.squarespace-cdn.com/content/v1/5c77350965a707ed1710a1bc/1588698303774-0O4IBACSMA5J5ZB00ZOC/Sprawl+Generative+Art+by+Mark+J.+Stock.jpeg?format=1000w%22" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Figure 1: Sprawl by Mark J. Stock</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Sprawl by Mark J. Stock</figcaption><p></p>
 </figure>
 </div>
 <p>AI generated art is a specific type of generative art to uses machine learning tools to examine existing work. The following source will discuss those a little more.</p>
@@ -242,7 +249,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="fig-tate" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/.width-1200_UCL4WkH.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Figure 2: Untitle Computer Drawing by Harold Cohen (1982)</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Untitle Computer Drawing by Harold Cohen (1982)</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -252,7 +259,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="fig-allen" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="https://static01.nyt.com/images/2022/09/01/business/00roose-1/merlin_212276709_3104aef5-3dc4-4288-bb44-9e5624db0b37-superJumbo.jpg?quality=75&amp;auto=webp%22" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Figure 3: Théâtre D’opéra Spatial by Jason Allen via Midjourney</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Théâtre D’opéra Spatial by Jason Allen via Midjourney</figcaption><p></p>
 </figure>
 </div>
 <p>Allen explained that he didn’t break the rules to the win the Colorado State Fair’s annual art competition.</p>
@@ -272,7 +279,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <iframe src="https://www.youtube.com/embed/eUSx4_S6O34" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure 4: KarenXCheng uses Dall-E 2, an AI tool, to generate images.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: KarenXCheng uses Dall-E 2, an AI tool, to generate images.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -291,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <iframe src="https://www.youtube.com/embed/6-L4vHmt1Dc" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure 5: KarenXCheng uses Dall-E 2 and EbSynth to create her project.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: KarenXCheng uses Dall-E 2 and EbSynth to create her project.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -378,7 +385,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="fig-lightgreen" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="index_files/figure-html/fig-lightgreen-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Figure 6: Light Green Color</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Light Green Color</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -390,7 +397,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="fig-sleep" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="sleeptreatmentsum.PNG" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Figure 7: Summary of Treatment Effects</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Summary of Treatment Effects</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -539,7 +546,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
