@@ -18,7 +18,7 @@
     "href": "assignments.html",
     "title": "Assignments for EPPS 6356",
     "section": "",
-    "text": "Different kinds of combine, grep and 4 verb for the pipe operator\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nBlog\n\n\nHackathon\n\n\n\n\n\n\n\n\n\n\n\nOct 24, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\nHackathon\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nPrattasha, Kaitlyn, Bel, Leonardo\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\nHackathon\n\n\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nPrattasha, Kaitlyn, Bel, Leonardo\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 25, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nWhat I learned while working on assignment 2\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nPlots\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nWhat I learned while working on assignment 1\n\n\n\n\nCode\n\n\nR\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCode\n\n\nR\n\n\nArt\n\n\nAssignment\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nBel Khuu\n\n\n\n\n\n\n  \n\n\n\n\n\nEverything I learned while working on my assignment\n\n\n\n\nR\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+    "text": "I chose a blog setup for the assignments because it gives you a glimpse of what’s being discussed on each post, and in chronological order. My latest assignments will be on the top!\nMy goal for this page is to create a blog post that includes what I have learnt for each assignment in this Data Visualization class. So, one assignment post and one blog post. They will be tagged “blog”, “assignment”, or “hackathon” under Categories."
   },
   {
     "objectID": "index.html",
@@ -32,21 +32,21 @@
     "href": "posts/Assignment - 1/index.html",
     "title": "Assignment 1: Generative Art",
     "section": "",
-    "text": "The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.\nThe page introduces us a various artists who create generative art and algorithm art.\nFigure 1 is a piece by Mark J. Stock, who tread the line between what’s natural and what’s computerized.\n\n\n\nFigure 1: Sprawl by Mark J. Stock\n\n\nAI generated art is a specific type of generative art to uses machine learning tools to examine existing work. The following source will discuss those a little more.\n\n\n\nThe Tate art museum adds that generative art usually includes an element of chance. According to the museum, Harold Cohen was considered one of the pioneers for generative art, which started from the dada movement.\n\n\n\nFigure 2: Untitle Computer Drawing by Harold Cohen (1982)\n\n\n\n\n\nThere is no surprise that this new way of creating will leave “traditional” artists somewhat uneasy. In this New York Times article, published a few days ago, an A.I. generated piece Figure 3 by artist Jason Allen won this year’s the Colorado State Fair’s annual art competition.\n\n\n\nFigure 3: Théâtre D’opéra Spatial by Jason Allen via Midjourney\n\n\nAllen explained that he didn’t break the rules to the win the Colorado State Fair’s annual art competition.\nHere is a glimpse of how powerful A.I.-generating tools like Midjourney or Dall-E 2 can be.\nKarenXCheng is an video creator uses Dall-E 2 to create different images for her projects. We can see that in Figure 4, the tool needs specific prompts to generate different images. The artists, like Cheng, will have to comb though them to select the ones she likes best!\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/eUSx4_S6O34\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 4: KarenXCheng uses Dall-E 2, an AI tool, to generate images.\n\n\n\nIn Figure 5, Cheng also uses multiple AI tools including Dall-E 2 to generate images, and EbSynth and DAIN to optimize her project.\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/6-L4vHmt1Dc\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 5: KarenXCheng uses Dall-E 2 and EbSynth to create her project."
+    "text": "The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.\nThe page introduces us a various artists who create generative art and algorithm art.\nFigure 1 is a piece by Mark J. Stock, who tread the line between what’s natural and what’s computerized.\n\n\n\nFigure 1: Sprawl by Mark J. Stock\n\n\nAI generated art is a specific type of generative art to uses machine learning tools to examine existing work. The following source will discuss those a little more.\n\n\n\nThe Tate art museum adds that generative art usually includes an element of chance. According to the museum, Harold Cohen was considered one of the pioneers for generative art, which started from the dada movement.\n\n\n\nFigure 2: Untitle Computer Drawing by Harold Cohen (1982)\n\n\n\n\n\nThere is no surprise that this new way of creating will leave “traditional” artists somewhat uneasy. In this New York Times article, published a few days ago, an A.I. generated piece Figure 3 by artist Jason Allen won this year’s the Colorado State Fair’s annual art competition.\n\n\n\nFigure 3: Théâtre D’opéra Spatial by Jason Allen via Midjourney\n\n\nAllen explained that he didn’t break the rules to the win the Colorado State Fair’s annual art competition.\nHere is a glimpse of how powerful A.I.-generating tools like Midjourney or Dall-E 2 can be.\nKarenXCheng is an video creator uses Dall-E 2 to create different images for her projects. We can see that in Figure 4, the tool needs specific prompts to generate different images. The artists, like Cheng, will have to comb though them to select the ones she likes best!\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/eUSx4_S6O34\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 4: KarenXCheng uses Dall-E 2, an AI tool, to generate images.\n\n\n\nIn Figure 5, Cheng also uses multiple AI tools including Dall-E 2 to generate images, and EbSynth and DAIN to optimize her project.\n\n\nCode\nlibrary(\"vembedr\")\nembed_url(\"https://youtu.be/6-L4vHmt1Dc\")%>%\n  use_align(\"center\")\n\n\n\n\n\n\n\n\nFigure 5: KarenXCheng uses Dall-E 2 and EbSynth to create her project."
   },
   {
     "objectID": "posts/Assignment - 1/index.html#fall-color",
     "href": "posts/Assignment - 1/index.html#fall-color",
     "title": "Assignment 1: Generative Art",
     "section": "2. Fall Color",
-    "text": "2. Fall Color\nFigure 6 is a modified version of “Fall Color,” using the color “lightgreen” instead of “burlywood3.”\nCredit: https://fronkonstin.com\n\n\nCode\n# Install packages\n\n# install.packages(\"gsubfn\")\n# install.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n  \n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"lightgreen\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\n\n\n\n\n\nFigure 6: Light Green Color"
+    "text": "2. Fall Color\nFigure 6 is a modified version of “Fall Color,” using the color “lightgreen” instead of “burlywood3.”\nCredit: https://fronkonstin.com\n\n\nCode\n# Install packages\n\n# install.packages(\"gsubfn\")\n# install.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n  \n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"lightgreen\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\n\n\n\n\n\nFigure 6: Light Green Color"
   },
   {
     "objectID": "posts/Assignment - 1/index.html#critique-on-a-chart-from-published-work",
     "href": "posts/Assignment - 1/index.html#critique-on-a-chart-from-published-work",
     "title": "Assignment 1: Generative Art",
     "section": "3. Critique on a chart from published work",
-    "text": "3. Critique on a chart from published work\nThe Economic Consequences of Increasing Sleep Among the Urban Poor is an article that discussed an experimental research about sleep and its impact. Figure 7 sums up the findings of the study.\n\n\n\nFigure 7: Summary of Treatment Effects\n\n\n\nColor:\n\nWhen I looked at Figure 7, I was immediately drawn to the larger colored area at the bottom of the graphic, separating the effects of a night-sleep treatment and nap treatment. Whatever is being tested, naps has a larger effect than night-sleep.\nThe next elements I saw were the tests grouped by colors since my eyes were already focused on the lower part of the graphics.\n\nFont:\n\nTo find out what the colors mean, I look at that top of the graphic. The categories of the tests are capitalized a bolted. At this point, I was able to compare the magnitude of the effects between night-sleep and naps. The graphic did a good job guiding my attention.\nThe title is in serif, whereas the rest of the graphic has sans serif font.\n\nAxis:\n\nThe vertical Axis has the size of the effect and horizontal axis has treatments grouped by categories in different colors.\n\nCanvas and Additional design:\n\nThe bar in the middle of the rectangles are standard deviations. This a clean and effective way to provide more information about the results.\nNext, I was curious about whether these effects were positive or negative. Here is where I don’t think the author did the best job. It was easier to see where the baseline (zero effect) was in the nap section thanks to the large rectangles for positive effects. However, it is harder to see whether the effects are positive or negative for night-sleep, especially when they are small like cognition effects. An easy way to rectify this is to add a grey or faint line at 0."
+    "text": "3. Critique on a chart from published work\nThe Economic Consequences of Increasing Sleep Among the Urban Poor is an article that discussed an experimental research about sleep and its impact. Figure 7 sums up the findings of the study.\n\n\n\nFigure 7: Summary of Treatment Effects\n\n\n\nColor:\n\nWhen I looked at Figure 7, I was immediately drawn to the larger colored area at the bottom of the graphic, separating the effects of a night-sleep treatment and nap treatment. Whatever is being tested, naps has a larger effect than night-sleep.\nThe next elements I saw were the tests grouped by colors since my eyes were already focused on the lower part of the graphics.\n\nFont:\n\nTo find out what the colors mean, I look at that top of the graphic. The categories of the tests are capitalized a bolted. At this point, I was able to compare the magnitude of the effects between night-sleep and naps. The graphic did a good job guiding my attention.\nThe title is in serif, whereas the rest of the graphic has sans serif font.\n\nAxis:\n\nThe vertical Axis has the size of the effect and horizontal axis has treatments grouped by categories in different colors.\n\nCanvas and Additional design:\n\nThe bar in the middle of the rectangles are standard deviations. This a clean and effective way to provide more information about the results.\nNext, I was curious about whether these effects were positive or negative. Here is where I don’t think the author did the best job. It was easier to see where the baseline (zero effect) was in the nap section thanks to the large rectangles for positive effects. However, it is harder to see whether the effects are positive or negative for night-sleep, especially when they are small like cognition effects. An easy way to rectify this is to add a grey or faint line at 0."
   },
   {
     "objectID": "posts/Assignment - 2/index.html",
@@ -112,6 +112,34 @@
     "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Prattasha and Kaitlyn took the lead on the column chart. Bel took the lead on the animated table matrix. Leonard reviewed and merged all final codes to create our blog."
   },
   {
+    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
+    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
+    "title": "Assignment 5: Hackathon 2",
+    "section": "1. Bar Chart",
+    "text": "1. Bar Chart\nHere we have a bar chart that displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year.\n\n\n\n\n\nggplot(grades, aes(Subject, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))\nThis bar chart shows the number of F’s per EPPS class for the Fall 2021 and Spring 2022 academic year. EPPS 2301 with the strong lead!\n\n\n\n\n\nggplot(EPPS, aes(Course, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))"
+  },
+  {
+    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
+    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
+    "title": "Assignment 5: Hackathon 2",
+    "section": "2. Column Chart",
+    "text": "2. Column Chart\nThis column chart shows the count of A’s in Dr. Ho’s classes for the Fall 2021 and Spring 2022 semesters.\n\n\n\n\n\ncc %>%\n  ggplot()+\n  geom_col(mapping = aes(x=Course, y=A.x),\n           fill = c(\"limegreen\",\"limegreen\", \"springgreen4\",\"limegreen\", \"limegreen\")) +\n  labs(x = \"Course\", y = \"A Grade\",\n       title=\"A Grades in Dr. Karl Ho's Class\",\n       subtitle = \"Fall 2021 & Spring 2022\") +\n  geom_text(aes(x=Course, y=A.x,label= A.x),vjust=1.2, size=5,col = \"white\")"
+  },
+  {
+    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
+    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
+    "title": "Assignment 5: Hackathon 2",
+    "section": "3. Circular Area Chart/ Spider Chart",
+    "text": "3. Circular Area Chart/ Spider Chart\nThis Spider Chart shows the frequency of A grades in Dr. Ho’s classes. Note that the students tend to perform better as the level of the class increases!\n\n\n        EPPS_6323 EPPS_6354 EPPS_7386 PSCI_4314 EPPS_6356 PSCI_4313 EPPS_6302\nKarl_Ho       0.8      0.54      0.95      0.42      0.92      0.61      0.77\n        EPPS_7V81 EPPS_7318\nKarl_Ho      0.86       0.9\n\n\n\n\n\nradarchart(EPPS, \n           title = \"Karl Ho A Grade Frequency\", \n           pcol =\"chocolate1\", \n           cglcol = \"chartreuse4\", \n           axislabcol = \"chartreuse4\", \n           axistype = 3)"
+  },
+  {
+    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
+    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
+    "title": "Assignment 5: Hackathon 2",
+    "section": "Synergy Report",
+    "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Bel gathered and formatted the data. Leonard worked on the bar chart. Prattasha took the lead on the column chart. Kaitlyn took the lead on the circular area chart. Bel and Leonard edited and merged the group’s work."
+  },
+  {
     "objectID": "posts/blogpost - 1/index.html",
     "href": "posts/blogpost - 1/index.html",
     "title": "Blog Post 1: Exploring Quarto and more",
@@ -154,62 +182,6 @@
     "text": "How to get sub-captions\nHere is the beginning of the second code chunk from exploring the murrell01.R script.\n#| code-fold: true\n#| fig-cap: \"More Plots\" \n#| fig-subcap:\n#|   - \"Scatterplot\"\n#|   - \"Histogram\"\n#|   - \"Barplot\"\n#|   - \"Boxplot\"\n#|   - \"Persp\"\n#|   - \"Piechart\"\n#| layout-ncol: 2\n#| layout-nrow: 3\nBelow, you can see what it the assignment looks like on you have applied these Execution Options. You can click on the hyperlink to learn them.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Assignment Page",
-    "section": "",
-    "text": "This first post serves more a read me document; basically, how to best navigate this Assignments tab.\nMy goal for this page is to create a blog post that includes what I have learnt for each assignment. So, one assignment post and one blog post. They will be tagged “blog” or “assignment” under Categories."
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Assignments for EPPS 6356",
-    "section": "",
-    "text": "R\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/welcome/index.html",
-    "href": "projects/welcome/index.html",
-    "title": "Welcome To My Project Page",
-    "section": "",
-    "text": "This first post serves more a read me document; basically, how to best navigate this Assignments tab.\nMy goal for this page is to create a blog post that includes what I have learnt for each assignment. So, one assignment post and one blog post. They will be tagged “blog” or “assignment” under Categories."
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "I don’t have any research project so far :)"
-  },
-  {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
-    "title": "Assignment 5: Hackathon 2",
-    "section": "1. Bar Chart",
-    "text": "1. Bar Chart\nHere we have a bar chart that displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year.\n\n\n\n\n\nggplot(grades, aes(Subject, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))\nThis bar chart shows the number of F’s per EPPS class for the Fall 2021 and Spring 2022 academic year. EPPS 2301 with the strong lead!\n\n\n\n\n\nggplot(EPPS, aes(Course, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))"
-  },
-  {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
-    "title": "Assignment 5: Hackathon 2",
-    "section": "Synergy Report",
-    "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Bel gathered and formatted the data. Leonard worked on the bar chart. Prattasha took the lead on the column chart. Kaitlyn took the lead on the circular area chart. Bel and Leonard edited and merged the group’s work."
-  },
-  {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
-    "title": "Assignment 5: Hackathon 2",
-    "section": "2. Column Chart",
-    "text": "2. Column Chart\nThis column chart shows the count of A’s in Dr. Ho’s classes for the Fall 2021 and Spring 2022 semesters.\n\n\n\n\n\ncc %>%\n  ggplot()+\n  geom_col(mapping = aes(x=Course, y=A.x),\n           fill = c(\"limegreen\",\"limegreen\", \"springgreen4\",\"limegreen\", \"limegreen\")) +\n  labs(x = \"Course\", y = \"A Grade\",\n       title=\"A Grades in Dr. Karl Ho's Class\",\n       subtitle = \"Fall 2021 & Spring 2022\") +\n  geom_text(aes(x=Course, y=A.x,label= A.x),vjust=1.2, size=5,col = \"white\")"
-  },
-  {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
-    "title": "Assignment 5: Hackathon 2",
-    "section": "3. Circular Area Chart/ Spider Chart",
-    "text": "3. Circular Area Chart/ Spider Chart\nThis Spider Chart shows the frequency of A grades in Dr. Ho’s classes. Note that the students tend to perform better as the level of the class increases!\n\n\n        EPPS_6323 EPPS_6354 EPPS_7386 PSCI_4314 EPPS_6356 PSCI_4313 EPPS_6302\nKarl_Ho       0.8      0.54      0.95      0.42      0.92      0.61      0.77\n        EPPS_7V81 EPPS_7318\nKarl_Ho      0.86       0.9\n\n\n\n\n\nradarchart(EPPS, \n           title = \"Karl Ho A Grade Frequency\", \n           pcol =\"chocolate1\", \n           cglcol = \"chartreuse4\", \n           axislabcol = \"chartreuse4\", \n           axistype = 3)"
-  },
-  {
     "objectID": "posts/blogpost - 3/index.html",
     "href": "posts/blogpost - 3/index.html",
     "title": "Blog Post 3: Hackathon 2",
@@ -236,5 +208,26 @@
     "title": "Blog Post 3: Hackathon 2",
     "section": "3. Revisiting the 4 verbs in pipe operator",
     "text": "3. Revisiting the 4 verbs in pipe operator\nI have created a cheat sheet for R while working on my projects. Professor Li often refer to these as the 4 verbs when using the pipe operator %>%. I don’t know when but I have added a fifth one to my list.\n\nFilter: pick rows you want to keep\nSelect: pick columns you want to keep\nMutate: create new variable with new conditions\nSummarize: summarize with new variables\nArrange: to sort in order\n\nBelow is what the 4 verbs part of my cheat sheet script looks like.\n#4 VERBS\n\n######### \n\n# Filter function works on rows.\n# Select function will pick the column to keep.\n# Mutate can create new variables\n# Summary to summarize\n# Arrange to sort in order\n\n##filter\ntxhousing <- txhousing%>%\n  filter(city=='Dallas'|city=='Houston'|city=='Austin', month==1)\n\nlabor_high <- filter(labor, payment>750, gender==\"F\")\n\n##select\nlabor_select <- select(labor, hours, gender)\nlabor_select2 <- labor %>%\n  select(hours, gender)\n\n## mutate \nlabor_mutate2 <- labor %>%\n  mutate(wage = payment/hours)\n\n##summarize\nlabor_summary <- summarize(group_by(labor, gender), \n                           avg_hours = mean(hours),\n                           paymentsum = sum(payment), \n                           medianage = median(age))\n\n##arrange\n#MUST SPECIFY GROUP_BY with by_group=TRUE\n#DEFAULT ascending order\n\nby_cyl <- mtcars %>% \n  group_by(cyl)\nby_cyl %>% \n  arrange(desc(wt), .by_group = TRUE)\n#########"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Assignments for EPPS 6356",
+    "section": "",
+    "text": "R\n\n\nCode\n\n\nBlog\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nBel Khuu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/welcome/index.html",
+    "href": "projects/welcome/index.html",
+    "title": "Welcome To My Project Page",
+    "section": "",
+    "text": "This first post serves more a read me document; basically, how to best navigate this Assignments tab.\nMy goal for this page is to create a blog post that includes what I have learnt for each assignment. So, one assignment post and one blog post. They will be tagged “blog” or “assignment” under Categories."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I don’t have any research project so far :)"
   }
 ]
