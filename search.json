@@ -112,32 +112,60 @@
     "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Prattasha and Kaitlyn took the lead on the column chart. Bel took the lead on the animated table matrix. Leonard reviewed and merged all final codes to create our blog."
   },
   {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#bar-chart",
-    "title": "Assignment 5: Hackathon 2",
+    "objectID": "posts/Assignment - 5/index.html#bar-chart",
+    "href": "posts/Assignment - 5/index.html#bar-chart",
+    "title": "Assignment 5",
     "section": "1. Bar Chart",
     "text": "1. Bar Chart\nHere we have a bar chart that displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year.\n\n\n\n\n\nggplot(grades, aes(Subject, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))\nThis bar chart shows the number of F’s per EPPS class for the Fall 2021 and Spring 2022 academic year. EPPS 2301 with the strong lead!\n\n\n\n\n\nggplot(EPPS, aes(Course, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))"
   },
   {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#column-chart",
-    "title": "Assignment 5: Hackathon 2",
+    "objectID": "posts/Assignment - 5/index.html#column-chart",
+    "href": "posts/Assignment - 5/index.html#column-chart",
+    "title": "Assignment 5",
     "section": "2. Column Chart",
     "text": "2. Column Chart\nThis column chart shows the count of A’s in Dr. Ho’s classes for the Fall 2021 and Spring 2022 semesters.\n\n\n\n\n\ncc %>%\n  ggplot()+\n  geom_col(mapping = aes(x=Course, y=A.x),\n           fill = c(\"limegreen\",\"limegreen\", \"springgreen4\",\"limegreen\", \"limegreen\")) +\n  labs(x = \"Course\", y = \"A Grade\",\n       title=\"A Grades in Dr. Karl Ho's Class\",\n       subtitle = \"Fall 2021 & Spring 2022\") +\n  geom_text(aes(x=Course, y=A.x,label= A.x),vjust=1.2, size=5,col = \"white\")"
   },
   {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#circular-area-chart-spider-chart",
-    "title": "Assignment 5: Hackathon 2",
+    "objectID": "posts/Assignment - 5/index.html#circular-area-chart-spider-chart",
+    "href": "posts/Assignment - 5/index.html#circular-area-chart-spider-chart",
+    "title": "Assignment 5",
     "section": "3. Circular Area Chart/ Spider Chart",
     "text": "3. Circular Area Chart/ Spider Chart\nThis Spider Chart shows the frequency of A grades in Dr. Ho’s classes. Note that the students tend to perform better as the level of the class increases!\n\n\n        EPPS_6323 EPPS_6354 EPPS_7386 PSCI_4314 EPPS_6356 PSCI_4313 EPPS_6302\nKarl_Ho       0.8      0.54      0.95      0.42      0.92      0.61      0.77\n        EPPS_7V81 EPPS_7318\nKarl_Ho      0.86       0.9\n\n\n\n\n\nradarchart(EPPS, \n           title = \"Karl Ho A Grade Frequency\", \n           pcol =\"chocolate1\", \n           cglcol = \"chartreuse4\", \n           axislabcol = \"chartreuse4\", \n           axistype = 3)"
   },
   {
-    "objectID": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
-    "href": "posts/Assignment - 5 (Hackathon 2)/index.html#synergy-report",
-    "title": "Assignment 5: Hackathon 2",
+    "objectID": "posts/Assignment - 5/index.html#synergy-report",
+    "href": "posts/Assignment - 5/index.html#synergy-report",
+    "title": "Assignment 5",
     "section": "Synergy Report",
     "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Bel gathered and formatted the data. Leonard worked on the bar chart. Prattasha took the lead on the column chart. Kaitlyn took the lead on the circular area chart. Bel and Leonard edited and merged the group’s work."
+  },
+  {
+    "objectID": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#bar-chart-1.",
+    "href": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#bar-chart-1.",
+    "title": "Assignment 6 and 7: Hackathon 2",
+    "section": "Bar Chart 1.",
+    "text": "Bar Chart 1.\nThe first bar chart displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year. The second bar chart shows the number of F’s per EPPS class for the Fall 2021 and Spring 2022 academic year. EPPS 2301 with the strong lead!\n\n\n\n\n\nggplot(grades, aes(Subject, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))\n\n\nWarning: Removed 32 rows containing missing values (position_stack).\n\n\n\n\n\n\nggplot(EPPS, aes(Course, F.x)) +\n  geom_bar(stat = \"identity\",color=\"orange\") +\n  coord_flip() + \n  labs(title = \"UTD Overachievers\", x = \"Subject\", y = \"F\") +\n  theme(axis.text.x = element_text(face=\"bold\", color=\"#008000\",\n                                   size=8, angle=0),\n        axis.text.y = element_text(face=\"bold\", color=\"#008000\",\n                                   size=3.5, angle=0))"
+  },
+  {
+    "objectID": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#column-chart",
+    "href": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#column-chart",
+    "title": "Assignment 6 and 7: Hackathon 2",
+    "section": "2. Column Chart",
+    "text": "2. Column Chart\nThis column chart shows the count of A’s in Dr. Ho’s classes for the Fall 2021 and Spring 2022 semesters.\n\n\n     Course A.x       A.y\n1 EPPS 6323   5 0.5000000\n2 EPPS 6354   7 0.5384615\n3 EPPS 6356   6 0.4615385\n4 EPPS 7386  13 0.6500000\n5 PSCI 4314   5 0.1785714\n\n\n\n\n\n\ncc %>%\n  ggplot()+\n  geom_col(mapping = aes(x=Course, y=A.x),\n           fill = c(\"limegreen\",\"limegreen\", \"springgreen4\",\"limegreen\", \"limegreen\")) +\n  labs(x = \"Course\", y = \"A Grade\",\n       title=\"A Grades in Dr. Karl Ho's Class\",\n       subtitle = \"Fall 2021 & Spring 2022\") +\n  geom_text(aes(x=Course, y=A.x,label= A.x),vjust=1.2, size=5,col = \"white\")"
+  },
+  {
+    "objectID": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#circular-area-chart-spider-chart",
+    "href": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#circular-area-chart-spider-chart",
+    "title": "Assignment 6 and 7: Hackathon 2",
+    "section": "3. Circular Area Chart/ Spider Chart",
+    "text": "3. Circular Area Chart/ Spider Chart\nThis Spider Chart shows the frequency of A grades in Dr. Ho’s classes. Note that the students tend to perform better as the level of the class increases!\n\n\n        EPPS_6323 EPPS_6354 EPPS_7386 PSCI_4314 EPPS_6356 PSCI_4313 EPPS_6302\nKarl_Ho       0.8      0.54      0.95      0.42      0.92      0.61      0.77\n        EPPS_7V81 EPPS_7318\nKarl_Ho      0.86       0.9\n\n\n\n\n\n\nradarchart(EPPS, title= \"Karl Ho A Grade Frequency\",\npcol=\"chocolate1\", cglcol = \"chartreuse4\",\naxislabcol = \"chartreuse4\", axistype = 3)"
+  },
+  {
+    "objectID": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#synergy-report",
+    "href": "posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html#synergy-report",
+    "title": "Assignment 6 and 7: Hackathon 2",
+    "section": "Synergy Report",
+    "text": "Synergy Report\nOur team worked together to work through the Shiny application. For the charts, Bel gathered and formatted the data. Leonard worked on the bar chart. Prattasha took the lead on the column chart. Kaitlyn took the lead on the circular area chart. Bel and Leonard edited and merged the group’s work."
   },
   {
     "objectID": "posts/blogpost - 1/index.html",
@@ -184,28 +212,28 @@
   {
     "objectID": "posts/blogpost - 3/index.html",
     "href": "posts/blogpost - 3/index.html",
-    "title": "Blog Post 3: Hackathon 2",
+    "title": "Blog Post 3: Assignment 5",
     "section": "",
-    "text": "Our team has decided to get a head start for the next week’s Hackathon. UTD Grades is a great website to find grades distribution for the classes offered at UTD during previous semesters. All of their raw data is posted on their github account!\nLet’s start with what I have learned or re-learned for the data cleaning process."
+    "text": "Our team has decided to get a head start for the next week’s assignment. UTD Grades is a great website to find grades distribution for the classes offered at UTD during previous semesters. All of their raw data is posted on their github account!\nLet’s start with what I have learned or re-learned for the data cleaning process."
   },
   {
     "objectID": "posts/blogpost - 3/index.html#different-kinds-of-combine",
     "href": "posts/blogpost - 3/index.html#different-kinds-of-combine",
-    "title": "Blog Post 3: Hackathon 2",
+    "title": "Blog Post 3: Assignment 5",
     "section": "1. Different kinds of combine",
     "text": "1. Different kinds of combine\n\na. rbind: Combine using same columns\n\n\n\nspgrades <- data.frame(read.csv(\"Spring2022grades.csv\"))\nfagrades <- data.frame(read.csv(\"Fall2021grades.csv\"))\n\ngrades <- rbind(fagrades, spgrades)\n\n\nb. paste: Combine values in two columns (concatenating)\nHere, I wanted just one Course column that has the subject and the catalog number.\n\n\n  Subject Catalog.Number\n1    ACCT           2301\n2    ACCT           2301\n3    ACCT           2301\n4    ACCT           2301\n5    ACCT           2301\n6    ACCT           2301\n\n\n     Course\n1 ACCT 2301\n2 ACCT 2301\n3 ACCT 2301\n4 ACCT 2301\n5 ACCT 2301\n6 ACCT 2301\n\n\ngrades$Course <- paste(grades$Subject, grades$Catalog.Number)\n\n\nc. merge: Combine using same rows\nHere, I tried to create percentage for all the grades. So, I created a copy of the grades dataframe that only contains grades. I copied over the Course column for the course names, then used merge to combine both dataframes.\n\n\n  Section A..x A.x A..1.x B..x B.x\n1     001   12   4      7    4   3\n2     001   12   4      7    4   3\n3     001   12   4      7    4   3\n4     001   12   4      7    4   3\n5     001   12   4      7    4   3\n6     001   12   4      7    4   3\n\n\n          A.          A       A..1         B.          B\n1 0.22641509 0.07547170 0.13207547 0.07547170 0.05660377\n2 0.20312500 0.14062500 0.09375000 0.07812500 0.09375000\n3 0.13846154 0.10769231         NA 0.12307692 0.09230769\n4         NA 0.27692308         NA 0.03076923 0.04615385\n5 0.18840580 0.11594203 0.04347826 0.07246377 0.01449275\n6 0.09230769 0.07692308 0.07692308 0.12307692 0.06153846\n\n\npct <- grades[4:21]/rowSums(grades[4:21], na.rm=TRUE)*ifelse(rowSums(\nis.na(grades[4:21])) == ncol(grades[4:21]), NA, 1)\npct$Course <- grades$Course\ngrades <- merge(grades,pct, by=\"Course\")\n\nhead(grades[4:9])\nhead(pct[1:5])"
   },
   {
     "objectID": "posts/blogpost - 3/index.html#revisiting-grep",
     "href": "posts/blogpost - 3/index.html#revisiting-grep",
-    "title": "Blog Post 3: Hackathon 2",
+    "title": "Blog Post 3: Assignment 5",
     "section": "2. Revisiting Grep",
     "text": "2. Revisiting Grep\nGrep is great when you are working with a large dataset and want to pull just the variables or column names that contains a certain string. In my case, I want to remove all the instructor columns. Could I have just selected the column numbers and remove them from my dataframe since they are right next to each other, yes!\nLet’s just say that knowing/remembering how to do this will benefit me in long run. I learned this in Professor Dong Li’s Select Topics in Economics.\n\n\n[1] \"Instructor.1\" \"Instructor.2\" \"Instructor.3\" \"Instructor.4\" \"Instructor.5\"\n[6] \"Instructor.6\"\n\n\ninstructor <- grep(\"Instructor\", colnames(grades), value = TRUE)\nHere is another example with grep. I wanted to find all the course that has EPPS in its name. All of those courses will eppsclass. EPPS will be the new dataframe created from the grades dataframe with only EPPS courses (using eppsclass present in Course).\n\n\n         Course Subject Catalog.Number Section A..x\n41078 EPPS 1110    EPPS           1110     003   NA\n41079 EPPS 1110    EPPS           1110     003   NA\n41080 EPPS 1110    EPPS           1110     003   NA\n41081 EPPS 1110    EPPS           1110     002   NA\n41082 EPPS 1110    EPPS           1110     002   NA\n41083 EPPS 1110    EPPS           1110     002   NA\n\n\neppsclass <- grep(\"EPPS\", grades$Course, value = TRUE)\nEPPS <- grades%>%\n  subset(Course %in% eppsclass)\nhead(EPPS[1:5])"
   },
   {
     "objectID": "posts/blogpost - 3/index.html#revisiting-the-4-verbs-in-pipe-operator",
     "href": "posts/blogpost - 3/index.html#revisiting-the-4-verbs-in-pipe-operator",
-    "title": "Blog Post 3: Hackathon 2",
+    "title": "Blog Post 3: Assignment 5",
     "section": "3. Revisiting the 4 verbs in pipe operator",
     "text": "3. Revisiting the 4 verbs in pipe operator\nI have created a cheat sheet for R while working on my projects. Professor Li often refer to these as the 4 verbs when using the pipe operator %>%. I don’t know when but I have added a fifth one to my list.\n\nFilter: pick rows you want to keep\nSelect: pick columns you want to keep\nMutate: create new variable with new conditions\nSummarize: summarize with new variables\nArrange: to sort in order\n\nBelow is what the 4 verbs part of my cheat sheet script looks like.\n#4 VERBS\n\n######### \n\n# Filter function works on rows.\n# Select function will pick the column to keep.\n# Mutate can create new variables\n# Summary to summarize\n# Arrange to sort in order\n\n##filter\ntxhousing <- txhousing%>%\n  filter(city=='Dallas'|city=='Houston'|city=='Austin', month==1)\n\nlabor_high <- filter(labor, payment>750, gender==\"F\")\n\n##select\nlabor_select <- select(labor, hours, gender)\nlabor_select2 <- labor %>%\n  select(hours, gender)\n\n## mutate \nlabor_mutate2 <- labor %>%\n  mutate(wage = payment/hours)\n\n##summarize\nlabor_summary <- summarize(group_by(labor, gender), \n                           avg_hours = mean(hours),\n                           paymentsum = sum(payment), \n                           medianage = median(age))\n\n##arrange\n#MUST SPECIFY GROUP_BY with by_group=TRUE\n#DEFAULT ascending order\n\nby_cyl <- mtcars %>% \n  group_by(cyl)\nby_cyl %>% \n  arrange(desc(wt), .by_group = TRUE)\n#########"
   },
