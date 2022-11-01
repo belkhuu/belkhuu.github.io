@@ -1,0 +1,16 @@
+{
+  "hash": "bdf1489fbae717aa7859eda7161644f2",
+  "result": {
+    "markdown": "---\ntitle: \"Blog Post 2: Creating Plots\"\nsubtitle: \"What I learned while working on assignment 2\"\nauthor: \"Bel Khuu\"\ndate: \"2022-09-24\"\ncategories: [Code, R, Plots, Blog]\nimage: \"Rplot.png\"\nfreeze: true\nformat:\n  html:\n    code-fold: true\n    code-tools: true\n    code-copy: true\nexecute:\n  echo: false\n---\n\n\nFor this week's assignment, I didn't learn much more in for Quarto. What I thought made my website a lot nicer was organizing my plots in 2 columns and giving them sub-captions.\n\n## How to get sub-captions\n\nHere is the beginning of the second code chunk from exploring the murrell01.R script.\n\n``` yaml\n#| code-fold: true\n#| fig-cap: \"More Plots\" \n#| fig-subcap:\n#|   - \"Scatterplot\"\n#|   - \"Histogram\"\n#|   - \"Barplot\"\n#|   - \"Boxplot\"\n#|   - \"Persp\"\n#|   - \"Piechart\"\n#| layout-ncol: 2\n#| layout-nrow: 3\n```\n\nBelow, you can see what it the assignment looks like on you have applied these [Execution Options](https://quarto.org/docs/computations/execution-options.html). You can click on the hyperlink to learn them.\n\n\n::: {.cell layout-nrow=\"3\" layout-ncol=\"2\"}\n::: {.cell-output-display}\n![Scatterplot](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![Histogram](index_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![Barplot](index_files/figure-html/unnamed-chunk-1-3.png){width=672}\n:::\n\n::: {.cell-output-display}\n![Boxplot](index_files/figure-html/unnamed-chunk-1-4.png){width=672}\n:::\n\n::: {.cell-output-display}\n![Persp](index_files/figure-html/unnamed-chunk-1-5.png){width=672}\n:::\n\n::: {.cell-output-display}\n![Piechart](index_files/figure-html/unnamed-chunk-1-6.png){width=672}\n:::\n\nMore Plots\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

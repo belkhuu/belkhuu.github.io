@@ -1,0 +1,171 @@
+---
+title: "Blog Post 3: Assignment 5"
+subtitle: "Different kinds of combine, grep and 4 verb for the pipe operator"
+author: "Bel Khuu"
+date: "2022-10-24"
+categories: [Code, R, Plots, Blog, Hackathon]
+image: "plot.jpg"
+draft: false
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    code-copy: true
+execute:
+  echo: false
+---
+
+Our team has decided to get a head start for the next week's assignment. [UTD Grades](utdgrades.com) is a great website to find grades distribution for the classes offered at UTD during previous semesters. All of their raw data is posted on their github account!
+
+Let's start with what I have learned or re-learned for the data cleaning process.
+
+## 1. Different kinds of combine
+
+### a. rbind: Combine using same columns
+
+```{r}
+#| warning: false
+#| fig-cap: ""
+
+library(tidyverse)
+spgrades <- data.frame(read.csv("Spring2022grades.csv"))
+fagrades <- data.frame(read.csv("Fall2021grades.csv"))
+
+grades <- rbind(fagrades, spgrades) 
+```
+
+``` yaml
+spgrades <- data.frame(read.csv("Spring2022grades.csv"))
+fagrades <- data.frame(read.csv("Fall2021grades.csv"))
+
+grades <- rbind(fagrades, spgrades)
+```
+
+### b. paste: Combine values in two columns (concatenating)
+
+Here, I wanted just one Course column that has the subject and the catalog number.
+
+```{r}
+grades$Course <- paste(grades$Subject, grades$Catalog.Number)
+
+head(grades[1:2])
+head(grades[28])
+```
+
+``` yaml
+grades$Course <- paste(grades$Subject, grades$Catalog.Number)
+```
+
+### c. merge: Combine using same rows
+
+Here, I tried to create percentage for all the grades. So, I created a copy of the grades dataframe that only contains grades. I copied over the Course column for the course names, then used merge to combine both dataframes.
+
+```{r}
+pct <- grades[4:21]/rowSums(grades[4:21], na.rm=TRUE) * ifelse(rowSums(is.na(grades[4:21])) == ncol(grades[4:21]), NA, 1)
+pct$Course <- grades$Course
+grades <- merge(grades,pct, by="Course")
+
+head(grades[4:9])
+head(pct[1:5])
+```
+
+``` yaml
+pct <- grades[4:21]/rowSums(grades[4:21], na.rm=TRUE)*ifelse(rowSums(
+is.na(grades[4:21])) == ncol(grades[4:21]), NA, 1)
+pct$Course <- grades$Course
+grades <- merge(grades,pct, by="Course")
+
+head(grades[4:9])
+head(pct[1:5])
+```
+
+## 2. Revisiting Grep
+
+Grep is great when you are working with a large dataset and want to pull just the variables or column names that contains a certain string. In my case, I want to remove all the instructor columns. Could I have just selected the column numbers and remove them from my dataframe since they are right next to each other, yes!
+
+Let's just say that knowing/remembering how to do this will benefit me in long run. I learned this in Professor Dong Li's Select Topics in Economics.
+
+```{r}
+instructor <- grep("Instructor", colnames(grades), value = TRUE)
+
+instructor
+```
+
+``` yaml
+instructor <- grep("Instructor", colnames(grades), value = TRUE)
+```
+
+Here is another example with grep. I wanted to find all the course that has EPPS in its name. All of those courses will eppsclass. EPPS will be the new dataframe created from the grades dataframe with only EPPS courses (using eppsclass present in Course).
+
+```{r}
+eppsclass <- grep("EPPS", grades$Course, value = TRUE)
+EPPS <- grades%>%
+  subset(Course %in% eppsclass)
+head(EPPS[1:5])
+```
+
+``` yaml
+eppsclass <- grep("EPPS", grades$Course, value = TRUE)
+EPPS <- grades%>%
+  subset(Course %in% eppsclass)
+head(EPPS[1:5])
+```
+
+## 3. Revisiting the 4 verbs in pipe operator
+
+I have created a cheat sheet for R while working on my projects. Professor Li often refer to these as the 4 verbs when using the pipe operator %\>%. I don't know when but I have added a fifth one to my list.
+
+-   Filter: pick rows you want to keep
+
+-   Select: pick columns you want to keep
+
+-   Mutate: create new variable with new conditions
+
+-   Summarize: summarize with new variables
+
+-   Arrange: to sort in order
+
+Below is what the 4 verbs part of my cheat sheet script looks like.
+
+``` yaml
+#4 VERBS
+
+######### 
+
+# Filter function works on rows.
+# Select function will pick the column to keep.
+# Mutate can create new variables
+# Summary to summarize
+# Arrange to sort in order
+
+##filter
+txhousing <- txhousing%>%
+  filter(city=='Dallas'|city=='Houston'|city=='Austin', month==1)
+
+labor_high <- filter(labor, payment>750, gender=="F")
+
+##select
+labor_select <- select(labor, hours, gender)
+labor_select2 <- labor %>%
+  select(hours, gender)
+
+## mutate 
+labor_mutate2 <- labor %>%
+  mutate(wage = payment/hours)
+
+##summarize
+labor_summary <- summarize(group_by(labor, gender), 
+                           avg_hours = mean(hours),
+                           paymentsum = sum(payment), 
+                           medianage = median(age))
+
+##arrange
+#MUST SPECIFY GROUP_BY with by_group=TRUE
+#DEFAULT ascending order
+
+by_cyl <- mtcars %>% 
+  group_by(cyl)
+by_cyl %>% 
+  arrange(desc(wt), .by_group = TRUE)
+#########
+```

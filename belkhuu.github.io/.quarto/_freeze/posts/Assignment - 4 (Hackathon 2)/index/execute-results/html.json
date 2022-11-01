@@ -1,0 +1,14 @@
+{
+  "hash": "ce1a327e203b85907d14e4f191e35c31",
+  "result": {
+    "markdown": "---\ntitle: \"Assignment -- Hackathon \"\nauthor: \"Prattasha, Kaitlyn, Bel, Leonardo\"\ndate: \"2022-09-27\"\ncategories: [Code, R, Plots, Assignment, Hackathon]\nimage: \"plot1.gif\"\ndraft: false\nformat:\n  html:\n    code-fold: true\n    code-tools: true\nexecute:\n  echo: false\neditor_options: \n  chunk_output_type: inline\n---\n\n\n## 1. Graph 1\n\n\n::: {.cell}\n\n:::\n\n\n```yaml\n# Copy code chunk for graph\n```\n\n##. Graph 2\n\n\n::: {.cell}\n\n:::\n\n\n```yaml\n# Copy code chunk for graph\n```\n\n## Synergy Report\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

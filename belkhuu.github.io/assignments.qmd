@@ -1,0 +1,19 @@
+---
+title: "Assignments for EPPS 6356"
+subtitle: "Assignments and everything I learned while working on them."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+I chose a blog setup for the assignments because it gives you a glimpse of what's being discussed on each post, and in chronological order. My latest assignments will be on the top!
+
+My goal for this page is to create a blog post that includes what I have learnt for each assignment in this Data Visualization class. So, one assignment post and one blog post. They will be tagged "blog", "assignment", or "hackathon" under Categories.
+
+##

@@ -1,0 +1,14 @@
+{
+  "hash": "e4315e373aad9bc6723ddae8cd88a514",
+  "result": {
+    "markdown": "---\ntitle: \"Assignment 6 and 7: Hackathon 2\"\nauthor: \"Prattasha, Kaitlyn, Bel, Leonardo\"\ndate: \"2022-10-25\"\ncategories: [Code, R, Plots, Assignment, Hackathon]\nimage: \"plot.jpg\"\ndraft: true\nformat:\n  html:\n    code-fold: true\n    code-tools: true\nexecute:\n  echo: false\neditor_options: \n  chunk_output_type: inline\n---\n\n\n## Shiny\n\n## 1.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## 2.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## 3.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## Synergy Report\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,25 @@
+---
+title: "About me"
+about:
+  template: trestles
+  image: Bel_Khuu.jpg
+  links:
+    - icon: instagram
+      text: Comet Cupboard Instagram
+      href: https://www.instagram.com/cometcupboard/
+    - icon: github
+      text: Github
+      href: https://belkhuu.github.io
+---
+
+## Education
+
+The University of Texas at Dallas \| Dallas, TX M.S in Economics \| August 2021 - December 2022
+
+The University of Texas at Dallas \| Dallas, TX B.S in Economics \| August 2019 - August 2021
+
+Dallas College, Richland Campus \| Dallas, TX A.S in Business \| May 2015 - December 2018
+
+## Experience
+
+Comet Cupboard, The University of Texas at Dallas \| Student Coordinator \| September 2019 - present

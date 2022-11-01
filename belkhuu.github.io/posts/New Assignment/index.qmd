@@ -1,0 +1,53 @@
+---
+title: "Assignment 6 and 7: Hackathon 2"
+author: "Prattasha, Kaitlyn, Bel, Leonardo"
+date: "2022-10-25"
+categories: [Code, R, Plots, Assignment, Hackathon]
+image: "plot.jpg"
+draft: true
+format:
+  html:
+    code-fold: true
+    code-tools: true
+execute:
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+## Shiny
+
+## 1.
+
+```{r Graph1}
+#| warning: false
+#| fig-cap: ""
+
+```
+
+``` yaml
+```
+
+## 2.
+
+```{r Graph2}
+#| warning: false
+#| fig-cap: ""
+
+```
+
+``` yaml
+```
+
+## 3.
+
+```{r}
+#| warning: false
+#| fig-cap: ""
+
+```
+
+``` yaml
+```
+
+## Synergy Report

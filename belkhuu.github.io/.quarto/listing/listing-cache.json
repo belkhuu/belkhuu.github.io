@@ -1,0 +1,10 @@
+{
+  "listingMap": {
+    "assignments.qmd": [
+      "posts"
+    ],
+    "project.qmd": [
+      "projects"
+    ]
+  }
+}

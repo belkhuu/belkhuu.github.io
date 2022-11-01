@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "belkhuu.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About 
+      - href: research.qmd
+        text: Research
+      - href: project.qmd
+        text: Projects
+      - href: assignments.qmd
+        text: Assignments
+      - href: Uyen_Van_Khuu_Resume.pdf
+        text: Resume
+
+format:
+  html:
+    theme: spacelab
+    css: styles.css
+    toc: true
+
+editor: visual
