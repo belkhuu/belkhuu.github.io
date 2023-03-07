@@ -1,0 +1,14 @@
+{
+  "hash": "4a89fed72726787a036f91ce067ce298",
+  "result": {
+    "markdown": "---\ntitle: \"Assignment 9\"\nauthor: \"Bel Khuu\"\ndate: \"2022-11-15\"\ncategories: [Code, R, Plots, Assignment, Time Series]\nimage: \"plot.jpg\"\ndraft: false\nformat:\n  html:\n    code-fold: true\n    code-tools: true\nexecute:\n  echo: false\neditor_options: \n  chunk_output_type: inline\n---\n\n\n## Time Series\n\n## 1.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## 2.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## 3.\n\n\n::: {.cell}\n\n:::\n\n\n``` yaml\n```\n\n## Synergy Report\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
