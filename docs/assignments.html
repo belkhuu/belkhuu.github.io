@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -90,7 +98,35 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -98,50 +134,48 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">belkhuu.github.io</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project.html">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
+<span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" aria-current="page">
- <span class="menu-text">Assignments</span></a>
+    <a class="nav-link" href="./blogposts.html"> 
+<span class="menu-text">Blog Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blogposts.html">
- <span class="menu-text">Blog Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./Uyen_Van_Khuu_Resume.pdf">
- <span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="./Uyen_Van_Khuu_Resume.pdf"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -155,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -181,6 +215,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <p>I chose a blog setup for the assignments because it gives you a glimpse of what’s being discussed on each post, and in chronological order. My latest assignments will be on the top!</p>
 <p>My goal for this page is to create a blog post that includes what I have learnt for each assignment in this Data Visualization class. So, one assignment post and one blog post. They will be tagged “blog”, “assignment”, or “hackathon” under Categories.</p>
 <section id="section" class="level2">
@@ -192,19 +227,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1669654800000" data-listing-file-modified-sort="1670307156000" data-listing-reading-time-sort="0.115">
+<div class="quarto-post image-right" data-index="0" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1669701600000" data-listing-file-modified-sort="1670307156000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <div class="thumbnail">
-<p><a href="./posts/Assignment 10/index.html"> <img src="./posts/Assignment 10/plot.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment 10/index.html" class="no-external"></a></p><a href="./posts/Assignment 10/index.html" class="no-external">
+<p><img src="./posts/Assignment 10/plot.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment 10/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment 10/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 10
+<a href="./posts/Assignment 10/index.html" class="no-external">Assignment 10</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment 10/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -219,14 +254,14 @@ Plots
 Assignment
 </div>
 </div>
-<a href="./posts/Assignment 10/index.html">
 <div class="listing-description">
+<a href="./posts/Assignment 10/index.html" class="no-external">
 
-</div>
 </a>
 </div>
+</div>
 <div class="metadata">
-<a href="./posts/Assignment 10/index.html">
+<a href="./posts/Assignment 10/index.html" class="no-external">
 <div class="listing-date">
 Nov 29, 2022
 </div>
@@ -236,19 +271,19 @@ Bel Khuu
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Code,R,Plots,Assignment,Time Series" data-listing-date-sort="1668445200000" data-listing-file-modified-sort="1670307150000" data-listing-reading-time-sort="0.115">
+<div class="quarto-post image-right" data-index="1" data-categories="Code,R,Plots,Assignment,Time Series" data-listing-date-sort="1668492000000" data-listing-file-modified-sort="1670307150000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <div class="thumbnail">
-<p><a href="./posts/Assignment 9/index.html"> <img src="./posts/Assignment 9/plot.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment 9/index.html" class="no-external"></a></p><a href="./posts/Assignment 9/index.html" class="no-external">
+<p><img src="./posts/Assignment 9/plot.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment 9/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment 9/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 9
+<a href="./posts/Assignment 9/index.html" class="no-external">Assignment 9</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment 9/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -266,14 +301,14 @@ Assignment
 Time Series
 </div>
 </div>
-<a href="./posts/Assignment 9/index.html">
 <div class="listing-description">
+<a href="./posts/Assignment 9/index.html" class="no-external">
 
-</div>
 </a>
 </div>
+</div>
 <div class="metadata">
-<a href="./posts/Assignment 9/index.html">
+<a href="./posts/Assignment 9/index.html" class="no-external">
 <div class="listing-date">
 Nov 15, 2022
 </div>
@@ -283,19 +318,19 @@ Bel Khuu
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Code,R,Plots,Assignment,Dashboard" data-listing-date-sort="1667840400000" data-listing-file-modified-sort="1670307119000" data-listing-reading-time-sort="0.115">
+<div class="quarto-post image-right" data-index="2" data-categories="Code,R,Plots,Assignment,Dashboard" data-listing-date-sort="1667887200000" data-listing-file-modified-sort="1670307119000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <div class="thumbnail">
-<p><a href="./posts/Assignment 8/index.html"> <img src="./posts/Assignment 8/plot.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment 8/index.html" class="no-external"></a></p><a href="./posts/Assignment 8/index.html" class="no-external">
+<p><img src="./posts/Assignment 8/plot.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment 8/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment 8/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 8
+<a href="./posts/Assignment 8/index.html" class="no-external">Assignment 8</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment 8/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -313,14 +348,14 @@ Assignment
 Dashboard
 </div>
 </div>
-<a href="./posts/Assignment 8/index.html">
 <div class="listing-description">
+<a href="./posts/Assignment 8/index.html" class="no-external">
 
-</div>
 </a>
 </div>
+</div>
 <div class="metadata">
-<a href="./posts/Assignment 8/index.html">
+<a href="./posts/Assignment 8/index.html" class="no-external">
 <div class="listing-date">
 Nov 8, 2022
 </div>
@@ -330,19 +365,19 @@ Bel Khuu
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Code,R,Plots,Assignment,Hackathon" data-listing-date-sort="1666630800000" data-listing-file-modified-sort="1666854301000" data-listing-reading-time-sort="5.73">
+<div class="quarto-post image-right" data-index="3" data-categories="Code,R,Plots,Assignment,Hackathon" data-listing-date-sort="1666674000000" data-listing-file-modified-sort="1666854301000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1146">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html"> <img src="./posts/Assignment - 6 and 7 (Hackathon 2)/plot.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external"></a></p><a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external">
+<p><img src="./posts/Assignment - 6 and 7 (Hackathon 2)/plot.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html">
 <h3 class="no-anchor listing-title">
-Assignment 6 and 7: Hackathon 2
+<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external">Assignment 6 and 7: Hackathon 2</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -360,14 +395,12 @@ Assignment
 Hackathon
 </div>
 </div>
-<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html">
 <div class="listing-description">
-The first bar chart displays the total count of F’s for UTD students across the indicated subjects for the Fall…
+<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external">The first bar chart displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year. The second bar chart…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html">
+<a href="./posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html" class="no-external">
 <div class="listing-date">
 Oct 25, 2022
 </div>
@@ -377,19 +410,19 @@ Prattasha, Kaitlyn, Bel, Leonardo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1666026000000" data-listing-file-modified-sort="1666728043000" data-listing-reading-time-sort="6.11">
+<div class="quarto-post image-right" data-index="4" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1666069200000" data-listing-file-modified-sort="1666728043000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1217">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 5/index.html"> <img src="./posts/Assignment - 5/plot.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 5/index.html" class="no-external"></a></p><a href="./posts/Assignment - 5/index.html" class="no-external">
+<p><img src="./posts/Assignment - 5/plot.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 5/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 5/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 5
+<a href="./posts/Assignment - 5/index.html" class="no-external">Assignment 5</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 5/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -404,14 +437,12 @@ Plots
 Assignment
 </div>
 </div>
-<a href="./posts/Assignment - 5/index.html">
 <div class="listing-description">
-Here we have a bar chart that displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year.
+<a href="./posts/Assignment - 5/index.html" class="no-external">Here we have a bar chart that displays the total count of F’s for UTD students across the indicated subjects for the Fall 2021 and Spring 2022 academic year.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 5/index.html">
+<a href="./posts/Assignment - 5/index.html" class="no-external">
 <div class="listing-date">
 Oct 18, 2022
 </div>
@@ -421,19 +452,19 @@ Prattasha, Kaitlyn, Bel, Leonardo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Code,R,Plots,Assignment,Hackathon" data-listing-date-sort="1664211600000" data-listing-file-modified-sort="1666591030000" data-listing-reading-time-sort="1.595">
+<div class="quarto-post image-right" data-index="5" data-categories="Code,R,Plots,Assignment,Hackathon" data-listing-date-sort="1664254800000" data-listing-file-modified-sort="1666591030000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 4 (Hackathon 1)/index.html"> <img src="./posts/Assignment - 4 (Hackathon 1)/plot1.gif" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external"></a></p><a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external">
+<p><img src="./posts/Assignment - 4 (Hackathon 1)/plot1.gif" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 4 (Hackathon 1)/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 4: Hackathon 1
+<a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external">Assignment 4: Hackathon 1</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -451,14 +482,12 @@ Assignment
 Hackathon
 </div>
 </div>
-<a href="./posts/Assignment - 4 (Hackathon 1)/index.html">
 <div class="listing-description">
-Here we visualize the total number of COVID cases as of…
+<a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external">Here we visualize the total number of COVID cases as of 2022-01-01 per continent or region. The width in the columns represents the number of countries within the specified…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 4 (Hackathon 1)/index.html">
+<a href="./posts/Assignment - 4 (Hackathon 1)/index.html" class="no-external">
 <div class="listing-date">
 Sep 27, 2022
 </div>
@@ -468,19 +497,19 @@ Prattasha, Kaitlyn, Bel, Leonardo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1664038800000" data-listing-file-modified-sort="1666592860000" data-listing-reading-time-sort="1.86">
+<div class="quarto-post image-right" data-index="6" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1664082000000" data-listing-file-modified-sort="1666592860000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="372">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 3/index.html"> <img src="./posts/Assignment - 3/AnscombeReg.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 3/index.html" class="no-external"></a></p><a href="./posts/Assignment - 3/index.html" class="no-external">
+<p><img src="./posts/Assignment - 3/AnscombeReg.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 3/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 3/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 3: Anscombe Regression Models and Plots
+<a href="./posts/Assignment - 3/index.html" class="no-external">Assignment 3: Anscombe Regression Models and Plots</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 3/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -495,14 +524,12 @@ Plots
 Assignment
 </div>
 </div>
-<a href="./posts/Assignment - 3/index.html">
 <div class="listing-description">
-In this example, the linear regression line is the same for all the models and yet, their scatter plot tells us that there is a better option to fit the data.
+<a href="./posts/Assignment - 3/index.html" class="no-external">In this example, the linear regression line is the same for all the models and yet, their scatter plot tells us that there is a better option to fit the data.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 3/index.html">
+<a href="./posts/Assignment - 3/index.html" class="no-external">
 <div class="listing-date">
 Sep 25, 2022
 </div>
@@ -512,19 +539,19 @@ Bel Khuu
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1663434000000" data-listing-file-modified-sort="1666592745000" data-listing-reading-time-sort="6.22">
+<div class="quarto-post image-right" data-index="7" data-categories="Code,R,Plots,Assignment" data-listing-date-sort="1663477200000" data-listing-file-modified-sort="1666592745000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1244">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 2/index.html"> <img src="./posts/Assignment - 2/Rplot.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 2/index.html" class="no-external"></a></p><a href="./posts/Assignment - 2/index.html" class="no-external">
+<p><img src="./posts/Assignment - 2/Rplot.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 2/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 2/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 2: Creating Plots
+<a href="./posts/Assignment - 2/index.html" class="no-external">Assignment 2: Creating Plots</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 2/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -539,14 +566,12 @@ Plots
 Assignment
 </div>
 </div>
-<a href="./posts/Assignment - 2/index.html">
 <div class="listing-description">
-Let’s start by exploring the murrell01.R script and learn how to create plots without using ggplot.
+<a href="./posts/Assignment - 2/index.html" class="no-external">Let’s start by exploring the murrell01.R script and learn how to create plots without using ggplot.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 2/index.html">
+<a href="./posts/Assignment - 2/index.html" class="no-external">
 <div class="listing-date">
 Sep 18, 2022
 </div>
@@ -556,19 +581,19 @@ Bel Khuu
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Code,R,Art,Assignment" data-listing-date-sort="1662915600000" data-listing-file-modified-sort="1666592738000" data-listing-reading-time-sort="5.045">
+<div class="quarto-post image-right" data-index="8" data-categories="Code,R,Art,Assignment" data-listing-date-sort="1662958800000" data-listing-file-modified-sort="1666592738000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1009">
 <div class="thumbnail">
-<p><a href="./posts/Assignment - 1/index.html"> <img src="./posts/Assignment - 1/image.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/Assignment - 1/index.html" class="no-external"></a></p><a href="./posts/Assignment - 1/index.html" class="no-external">
+<p><img src="./posts/Assignment - 1/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/Assignment - 1/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/Assignment - 1/index.html">
 <h3 class="no-anchor listing-title">
-Assignment 1: Generative Art
+<a href="./posts/Assignment - 1/index.html" class="no-external">Assignment 1: Generative Art</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/Assignment - 1/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
 Code
@@ -583,14 +608,12 @@ Art
 Assignment
 </div>
 </div>
-<a href="./posts/Assignment - 1/index.html">
 <div class="listing-description">
-The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.
+<a href="./posts/Assignment - 1/index.html" class="no-external">The Generative Art Guide describes generative art as creating art (shape, forms, colors, etc.) from an computer using a set of rules.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/Assignment - 1/index.html">
+<a href="./posts/Assignment - 1/index.html" class="no-external">
 <div class="listing-date">
 Sep 12, 2022
 </div>
@@ -632,9 +655,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -670,10 +707,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -683,8 +737,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -696,9 +759,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -739,6 +1038,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
