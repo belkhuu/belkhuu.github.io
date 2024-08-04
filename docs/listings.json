@@ -1,16 +1,8 @@
 [
   {
-    "listing": "/assignments.html",
+    "listing": "/project.html",
     "items": [
-      "/posts/Assignment 10/index.html",
-      "/posts/Assignment 9/index.html",
-      "/posts/Assignment 8/index.html",
-      "/posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html",
-      "/posts/Assignment - 5/index.html",
-      "/posts/Assignment - 4 (Hackathon 1)/index.html",
-      "/posts/Assignment - 3/index.html",
-      "/posts/Assignment - 2/index.html",
-      "/posts/Assignment - 1/index.html"
+      "/projects/EPPS 6356 Final Project/index.html"
     ]
   },
   {
@@ -23,10 +15,17 @@
     ]
   },
   {
-    "listing": "/project.html",
+    "listing": "/assignments.html",
     "items": [
-      "/projects/EPPS 6356 Final Project/index.html",
-      "/projects/welcome/index.html"
+      "/posts/Assignment 10/index.html",
+      "/posts/Assignment 9/index.html",
+      "/posts/Assignment 8/index.html",
+      "/posts/Assignment - 6 and 7 (Hackathon 2)/Assignment 6 and 7.html",
+      "/posts/Assignment - 5/index.html",
+      "/posts/Assignment - 4 (Hackathon 1)/index.html",
+      "/posts/Assignment - 3/index.html",
+      "/posts/Assignment - 2/index.html",
+      "/posts/Assignment - 1/index.html"
     ]
   }
 ]
